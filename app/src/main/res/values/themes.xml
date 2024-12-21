@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TaxCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="Theme.TaxCalculator" parent="Base.Theme.TaxCalculator" />
+
+    <style name="ShapeAppearanceOverlay.CustomCardView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="CustomShapeAppearance">
+    <item name="neumorph_cornerFamily">rounded</item>
+    <item name="neumorph_cornerSize">0dp</item>
+
+    <!-- Or if wants different radii depending on the corner. -->
+    <item name="neumorph_cornerSizeTopLeft">25dp</item>
+    <item name="neumorph_cornerSizeTopRight">25dp</item>
+    <item name="neumorph_cornerSizeBottomLeft">0dp</item>
+    <item name="neumorph_cornerSizeBottomRight">0dp</item>
+    </style>
+</resources>

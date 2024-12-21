@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_1">
+
+        <!-- User Profile Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+
+            android:paddingBottom="16dp">
+
+                <!-- Profile Picture -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_launcher_background"
+                   />
+
+                <!-- User Info -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sarwar Jahan"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/membership_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/darker_gray" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                        >
+                        <!-- Notification Icon -->
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/notification"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/notification"
+                            android:tint="@color/white"
+
+                            />
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+                >
+                <!-- Title Section -->
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:text="Listen The\nLatest Musics"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:paddingBottom="16dp" />
+                <!-- Search Bar -->
+                <LinearLayout
+                    android:layout_width="163dp"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/two_color_curved"
+                    android:layout_weight="1"
+
+
+
+                    >
+
+
+                        <EditText
+                            android:id="@+id/search_music"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:drawableLeft="@drawable/search"
+                            android:drawableTint="@color/white"
+                            android:gravity="center"
+                            android:hint="Search Music"
+                            android:paddingStart="8dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/darker_gray"
+                            tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Search Bar -->
+
+
+        <!-- Recently Played Section -->
+        <TextView
+            android:id="@+id/recently_played_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recently Played"
+            android:textSize="23sp"
+            android:textColor="@android:color/white"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <!-- Horizontal Scroll for Recently Played -->
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recently_played_recycler"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+               />
+        <!-- Recommended Section -->
+        <TextView
+
+            android:id="@+id/recommend_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommend for you"
+            android:textSize="23sp"
+            android:textColor="@android:color/white"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <!-- Recommended List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommend_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+</LinearLayout>

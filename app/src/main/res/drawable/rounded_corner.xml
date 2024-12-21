@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#BA0A071E"/>  <!-- Background color of the CardView -->
+
+
+    <stroke
+
+        android:width="2dp"
+        android:color="#20A3A3A3"
+
+
+        />
+
+    <corners
+        android:topLeftRadius="25dp"
+        android:topRightRadius="25dp"
+       android:bottomLeftRadius="0dp"
+       android:bottomRightRadius="0dp"
+
+    />
+</shape>

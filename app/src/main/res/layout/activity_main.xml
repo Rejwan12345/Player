@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_1"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    >
+
+  <FrameLayout
+      android:id="@+id/frame"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/cardView"
+      />
+
+
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="20dp"
+      android:layout_alignParentBottom="true"
+      app:cardElevation="10dp"
+      >
+    <RelativeLayout
+
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_bottom_nav"
+
+
+        >
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/custom_bottom_nav"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="85dp"
+          android:orientation="horizontal"
+          android:layout_alignParentBottom="true"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:background="#111121"
+          >
+        <!-- Your content -->
+
+
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home"
+            android:layout_weight="1"
+
+            />
+
+        <ImageView
+            android:id="@+id/music"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/song_list"
+            android:layout_weight="1"
+
+            />
+
+        <ImageView
+            android:id="@+id/album"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/album"
+            android:layout_weight="1"
+
+            />
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/favourite"
+            android:layout_weight="1"
+
+            />
+
+
+      </LinearLayout>
+
+    </RelativeLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
